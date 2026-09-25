@@ -1,5 +1,5 @@
 # apuntes
-Hola soy kenta y he hecho cambios jon kook
+Team Cherry please release the Sea of Sorrow I want to silk my song
 
 
 NONONONONO
