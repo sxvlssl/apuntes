@@ -1,3 +1,4 @@
+# C++ / Compilación y Binarios
 *.o
 *.obj
 *.so
@@ -8,12 +9,18 @@
 *.a
 *.lib
 
+# Ignorar ejecutables sin extensión comunes
+cos
+Práctica_*
+!Práctica_*.c++
+!Práctica_*.cpp
+
+# Directorios de compilación y CMake
 build/
 cmake-build-*/
 out/
 bin/
 lib/
-
 CMakeCache.txt
 CMakeFiles/
 CMakeDB/
@@ -22,18 +29,15 @@ Makefile
 cmake_install.cmake
 ctest.cmake
 
+# IDEs (VSCode y CLion)
 .idea/
+.vscode/
 *.iws
 *.iml
 *.ipr
-
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
+# Sistema Operativo y Temporales
 *~
 *.swp
 *.swo
