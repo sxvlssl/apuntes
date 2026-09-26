@@ -8,6 +8,11 @@
 *.a
 *.lib
 
+cos
+Práctica_*
+!Práctica_*.c++
+!Práctica_*.cpp
+
 build/
 cmake-build-*/
 out/
