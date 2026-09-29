@@ -4,13 +4,20 @@ using namespace std;
 
 int main(){
 
-    double decimal;
+    double nReal, decimal;
 
-    cout << "Introduzca el número decimal: ";
+    cout << "Introduzca el número a redondear: ";
+    cin >> nReal;
+
+    cout << "Introduzca el número de decimales: ";
     cin >> decimal;
 
-    double redondeado = round (decimal);
+    nReal = nReal*pow(10, decimal);
 
-    cout << "El número decimal redondeado es: " << redondeado << endl;
+    double temp = round (nReal);
 
+    double redondeado = temp/pow(10, decimal);
+
+    cout << "El número redondeado es: " << redondeado << endl;
+    
 }
