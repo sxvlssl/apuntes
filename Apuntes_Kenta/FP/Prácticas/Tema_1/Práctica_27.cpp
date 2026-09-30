@@ -3,14 +3,13 @@ using namespace std;
 
 int main(){
 
-    int entero;
     char caracter;
 
     cout << "Introduzca un dígito: ";
     cin >> caracter;
-    entero = caracter;
+    int entero = caracter - '0';
 
-    cout << "entero: " << entero << endl;
-    cout << "caracter: " << entero << endl;
+    cout << "Entero: " << entero << endl;
+    cout << "Caracter: " << (int)caracter << endl;
 
 }
