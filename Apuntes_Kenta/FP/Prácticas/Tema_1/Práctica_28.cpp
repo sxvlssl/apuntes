@@ -6,7 +6,6 @@ int main()
 {
 
     double min, max, top, n;
- 
 
     cout << "Introduzca el valor de mínimo del rango: ";
     cin >> min;
@@ -20,24 +19,10 @@ int main()
     cout << "Introduzca el valor n: ";
     cin >> n;
 
-    double temp = max/n;
-    double temp2 = top/temp;
+    int escalado = round(top*((n-min)/(max-min)));
 
-    for (int i=0; i<=top; i++)
-    {
+    cout << "El valor escalado es: " << escalado << endl;
 
-        if (temp = temp2)
-        cout << round(temp) << endl;
-        
-        else 
-        {
-            double temp2 = (top-1)/temp;
-        }
-    }
-
-    cout << "test: " << round(temp2) << endl;
-
-    cout << round(temp) << endl;
 }
 
     
