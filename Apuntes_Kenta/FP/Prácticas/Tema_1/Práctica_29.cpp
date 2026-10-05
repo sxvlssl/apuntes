@@ -4,13 +4,18 @@ using namespace std;
 int main()
 {
 
+    //Ejercicio 5
+
+    
+
+
     //Ejercicio 4
 
-    int año; 
+    int anio; //año
     cout << "Introduzca un año: ";
-    cin >> año;
+    cin >> anio;
 
-    bool bisiesto ((año % 4) && !(año % 100) && (año & 400));
+    bool bisiesto (((0 == anio % 4) && !(0 == anio % 100)) || (0 == anio % 400));
 
     cout << bisiesto << endl;
 

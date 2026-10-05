@@ -24,10 +24,3 @@ int main()
     cout << "El valor escalado es: " << escalado << endl;
 
 }
-
-    
-
-
-
-
-
