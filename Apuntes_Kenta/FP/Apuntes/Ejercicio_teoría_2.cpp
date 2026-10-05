@@ -7,12 +7,11 @@ main(){
     cout << "Introduzca un número entero: ";
     cin >> n;
 
-    bool par = (n%2 == 0);
+    bool es_par = (n%2 == 0);
 
-    if (par = 1)
+    if (es_par)
     cout << n << " es par" << endl;
 
     else 
     cout << n << " no es par" << endl;
-
 }
