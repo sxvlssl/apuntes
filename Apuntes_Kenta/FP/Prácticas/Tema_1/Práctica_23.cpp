@@ -7,9 +7,9 @@ int main(){
     cout << "Introduzca una letra mayúscula: ";
     cin >> letra;
 
-    int numero = int(letra)-65;
+    int numero = int(letra)-'A';
 
-    cout << numero;
+    cout << numero << endl;
 }
 
 
