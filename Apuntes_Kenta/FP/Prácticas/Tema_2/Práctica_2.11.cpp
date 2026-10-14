@@ -12,7 +12,6 @@ int main(){
     cout << "Introduzca la velocidad captada por el radar: ";
     cin >> velocidad_captada;
 
-
     if (tipo_radar == 'F'){
         if (velocidad_captada <= 100){
             velocidad_final = velocidad_captada - 5;
