@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
-main(){
+int main(){
 
     int entero1, entero2;
     int maximo;
