@@ -5,8 +5,7 @@ enum class Letra {mayuscula, minuscula, no_letra};
 
 int main(){
     char convertida, original;
-    const int DIST_MAY_MIN = 'a'-'A';        
-
+    const int DIST_MAY_MIN = 'a'-'A';
 
     //Input
     
