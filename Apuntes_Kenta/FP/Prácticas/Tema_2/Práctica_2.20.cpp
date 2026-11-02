@@ -32,7 +32,6 @@ int main(){
 
     //main
     double i = minimo;
-    //for (int i = minimo; i<=maximo; i = i+incremento)
     do{
     double gaussiana = (1/(desviacion*sqrt(2*pi)))*exp(-0.5*pow(((i-media)/desviacion), 2));
     cout << gaussiana << endl;
