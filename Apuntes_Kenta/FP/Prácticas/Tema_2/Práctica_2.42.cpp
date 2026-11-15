@@ -6,6 +6,7 @@ int main(){
     int suma;
 
     //input
+    cout << "números perfectos\n";
     do{
         cout << "min: ";
         cin >> min;
@@ -13,7 +14,7 @@ int main(){
     do{
         cout << "max: ";
         cin >> max;
-    }while(max<=min);    
+    }while(max<=min);
 
     //main
     while(min<=max){

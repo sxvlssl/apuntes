@@ -3,35 +3,33 @@ using namespace std;
 int main(){
 
     int min, max, k, numero_divisores=0;
-    int suma;
 
     //input
     do{
         cout << "min: ";
         cin >> min;
-    }while(min<=1);
+    }while(min<=0);
     do{
         cout << "max: ";
         cin >> max;
-    }while(max<=min);    
+    }while(max<min);    
     do{
         cout << "k: ";
         cin >> k;
-    }while(k<=1);
-
+    }while(k<1);
 
     //main
     while(min<=max){
-        int divisor=1;
-        suma=0;
+        int divisor=2;
+        numero_divisores=0;
         while(divisor<min){
-            while(min%divisor==0){
+            if(min%divisor==0){
                 numero_divisores++;
             }
             divisor++;
         }
-        if(suma==min){
-            cout << suma << "\n";
+        if(numero_divisores>=k){
+            cout << min << endl;
         }
         min++;
     }
