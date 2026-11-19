@@ -1,0 +1,67 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2981, cgraph_uid=1, symbol_order=0) (executed once)
+
+Partition 0: size 4 align 4
+	x
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/v/c:SI (plus:DI (reg/f:DI 93 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 x+0 S4 A32])
+        (const_int -1 [0xffffffffffffffff])) "src/test.cpp":2:18 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 98 [ x.0_1 ])
+        (mem/v/c:SI (plus:DI (reg/f:DI 93 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 x+0 S4 A32])) "src/test.cpp":3:32 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DF 103 [ _2 ])
+        (float:DF (reg:SI 98 [ x.0_1 ]))) "src/test.cpp":3:32 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:V2DF 105)
+        (mem/u/c:V2DF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S16 A128])) "src/test.cpp":3:34 -1
+     (expr_list:REG_EQUAL (const_vector:V2DF [
+                (const_double:DF +QNaN [+QNaN])
+                (const_double:DF 0.0 [0x0.0p+0])
+            ])
+        (nil)))
+(insn 9 8 10 2 (parallel [
+            (set (reg:DF 104 [ res_5 ])
+                (abs:DF (reg:DF 103 [ _2 ])))
+            (use (reg:V2DF 105))
+            (clobber (reg:CC 17 flags))
+        ]) "src/test.cpp":3:34 -1
+     (expr_list:REG_EQUAL (abs:DF (reg:DF 103 [ _2 ]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 102 [ _6 ])
+        (fix:SI (reg:DF 104 [ res_5 ]))) "src/test.cpp":4:12 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 101 [ <retval> ])
+        (reg:SI 102 [ _6 ])) "src/test.cpp":5:1 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 ax)
+        (reg:SI 101 [ <retval> ])) "src/test.cpp":5:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 ax)) "src/test.cpp":5:1 -1
+     (nil))
